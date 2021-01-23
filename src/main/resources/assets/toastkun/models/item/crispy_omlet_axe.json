@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "toastkun:item/crispy_omlet_axe"
+  }
+}
