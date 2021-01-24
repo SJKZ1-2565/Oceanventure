@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "toastkun:item/crispy_omlet_pickaxe"
+    "layer0": "toastkun:item/toasty_crystal_axe"
   }
 }

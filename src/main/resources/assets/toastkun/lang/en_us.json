@@ -1,6 +1,13 @@
 {
 
 	"item.toastkun.toast" : "Toast",
+	"item.toastkun.toasty_crystal" : "Toasty Crystal",
+	"item.toastkun.crispy_omlet" : "Crispy Omlet",
+	"item.toastkun.toasty_crystal_hoe" : "Toasty Crystal Hoe",
+	"item.toastkun.toasty_crystal_axe" : "Toasty Crystal Axe",
+	"item.toastkun.toasty_crystal_sword" : "Toasty Crystal Sword",
+	"item.toastkun.toasty_crystal_pickaxe" : "Toasty Crystal Piackaxe",
+	"item.toastkun.toasty_crystal_shovel" : "Toasty Crystal Shovel",
 	"block.toastkun.toasty_ore" : "Toasty Ore",
 	"itemGroup.toastkunTab" : "ToastKun"
 }

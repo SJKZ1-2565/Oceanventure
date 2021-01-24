@@ -9,8 +9,6 @@ import com.sjkz1.toastkun.init.TKBlocks;
 import com.sjkz1.toastkun.init.TKItems;
 import com.stevekung.stevekungslib.utils.CommonUtils;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +20,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class ToastKun
 {
 	public static final String MOD_ID = "toastkun"; 
-	public static ToastKun instance;
 	public static final Logger LOGGER = LogManager.getLogger();
 
 	public ToastKun()
@@ -41,13 +38,4 @@ public class ToastKun
 	
 	}
 
-	public static final ItemGroup TAB = new ItemGroup("toastkunTab") 
-	{
-		
-		@Override
-		public ItemStack createIcon() 
-		{
-			return new ItemStack(TKItems.TOAST.get());
-		}
-	};
 }
