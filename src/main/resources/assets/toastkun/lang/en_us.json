@@ -9,5 +9,6 @@
 	"item.toastkun.toasty_crystal_pickaxe" : "Toasty Crystal Piackaxe",
 	"item.toastkun.toasty_crystal_shovel" : "Toasty Crystal Shovel",
 	"block.toastkun.toasty_ore" : "Toasty Ore",
+	"block.toastkun.nether_toasty_ore" : "Nether Toasty Ore",
 	"itemGroup.toastkunTab" : "ToastKun"
 }

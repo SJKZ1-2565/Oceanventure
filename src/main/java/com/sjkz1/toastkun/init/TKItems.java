@@ -38,6 +38,9 @@ public class TKItems
 	 
 	 public static final RegistryObject<BlockItem> TOASTY_ORE = ITEMS.register("toasty_ore", 
 			 () -> new BlockItem(TKBlocks.TOASTY_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+	 
+	 public static final RegistryObject<BlockItem> NETHER_TOASTY_ORE = ITEMS.register("nether_toasty_ore", 
+			 () -> new BlockItem(TKBlocks.NETHER_TOASTY_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
 
 	    
 	    

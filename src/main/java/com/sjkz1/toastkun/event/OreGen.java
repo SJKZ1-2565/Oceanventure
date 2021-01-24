@@ -21,6 +21,10 @@ public class OreGen
 				{
 					genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, TKBlocks.TOASTY_ORE.get().getDefaultState(), 7, 3, 45, 20);
 				}
+		else if(event.getCategory().equals(Biome.Category.NETHER))
+		{
+			genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER, TKBlocks.NETHER_TOASTY_ORE.get().getDefaultState(), 7, 3, 45, 20);
+		}
 	}
 
 	public static void genOre(BiomeGenerationSettingsBuilder builder, RuleTest fillerType, BlockState block, int veinSize, int minHeigh , int maxHeigh , int count)
