@@ -1,11 +1,13 @@
 	modLoader="javafml" 
-	loaderVersion="[35,)" 
-	license="All rights reserved"
+	loaderVersion="[35,)"
+	license="MIT License"
+	updateJSONURL="https://raw.githubusercontent.com/SJKZ1-2565/ToastKun/master/CHANGELOG"
+
 
 [[mods]] 
 
 	modId="toastkun" 
-	version="1.0.0" 
+	version="${file.jarVersion}" 
 	displayName="ToastKun" 
 	#displayURL="https://www.curseforge.com/minecraft/mc-mods/mcbreaker"
 	logoFile="logo.png" 
@@ -29,18 +31,3 @@
 		versionRange="[1.16.4]"
 		ordering="NONE"
 		side="BOTH"
-		
-[[dependencies.toastkun]]
-	modId="stevekungs_lib"
-    mandatory=true
-    versionRange="[4.0.2,)"
-    ordering="NONE"
-    side="CLIENT"
-		
-		
-		
-		
-		
-		
-		
-
