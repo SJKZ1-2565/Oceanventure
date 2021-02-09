@@ -1,7 +1,7 @@
 	modLoader="javafml" 
 	loaderVersion="[35,)"
 	license="MIT License"
-	updateJSONURL="https://raw.githubusercontent.com/SJKZ1-2565/ToastKun/master/CHANGELOG"
+	updateJSONURL="https://raw.githubusercontent.com/SJKZ1-2565/modJSON-URL/master/toastkun.json"
 
 
 [[mods]] 

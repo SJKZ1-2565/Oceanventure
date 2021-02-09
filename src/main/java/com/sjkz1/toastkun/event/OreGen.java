@@ -23,7 +23,7 @@ public class OreGen
 				}
 		else if(event.getCategory().equals(Biome.Category.NETHER))
 		{
-			genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER, TKBlocks.NETHER_TOASTY_ORE.get().getDefaultState(), 7, 3, 45, 20);
+			genOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER, TKBlocks.NETHER_TOASTY_ORE.get().getDefaultState(), 7, 3, 70, 20);
 		}
 	}
 
