@@ -12,6 +12,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class TKBlocks 
 {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ToastKun.MOD_ID);
-	public static final RegistryObject<Block> TOASTY_ORE = BLOCKS.register("toasty_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
-	public static final RegistryObject<Block> NETHER_TOASTY_ORE = BLOCKS.register("nether_toasty_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.NETHER_GOLD_ORE)));
+	public static final RegistryObject<Block> TOASTY_CRYSTAL_ORE = BLOCKS.register("toasty_crystal_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.IRON_ORE)));
+	public static final RegistryObject<Block> NETHER_TOASTY_CRYSTAL_ORE = BLOCKS.register("nether_toasty_crystal_ore", () -> new Block(AbstractBlock.Properties.from(Blocks.NETHER_GOLD_ORE)));
 }

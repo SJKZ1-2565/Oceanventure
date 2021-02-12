@@ -3,6 +3,9 @@ package com.sjkz1.toastkun.init;
 
 import com.sjkz1.toastkun.core.ToastKun;
 
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Foods;
@@ -36,11 +39,20 @@ public class TKItems
 	 
 	 public static final RegistryObject<SwordItem> TOASTY_CRYSTAL_SWORD = ITEMS.register("toasty_crystal_sword", () -> new SwordItem(ItemTier.DIAMOND, 3, 2, new Item.Properties().group(ItemGroup.COMBAT)));
 	 
-	 public static final RegistryObject<BlockItem> TOASTY_ORE = ITEMS.register("toasty_ore", 
-			 () -> new BlockItem(TKBlocks.TOASTY_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
 	 
-	 public static final RegistryObject<BlockItem> NETHER_TOASTY_ORE = ITEMS.register("nether_toasty_ore", 
-			 () -> new BlockItem(TKBlocks.NETHER_TOASTY_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+	 
+	 //Armor
+	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_HELMET = ITEMS.register("toasty_crystal_helmet", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.HEAD, (new Item.Properties()).group(ItemGroup.COMBAT)));
+	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_CHESTPLATE = ITEMS.register("toasty_crystal_chestplate", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.CHEST, (new Item.Properties()).group(ItemGroup.COMBAT)));
+	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_LEGGINGS= ITEMS.register("toasty_crystal_leggings", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.LEGS, (new Item.Properties()).group(ItemGroup.COMBAT)));
+	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_BOOTS = ITEMS.register("toasty_crystal_boots", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.FEET, (new Item.Properties()).group(ItemGroup.COMBAT)));
+
+	 
+	 public static final RegistryObject<BlockItem> TOASTY_CRYSTAL_ORE = ITEMS.register("toasty_crystal_ore", 
+			 () -> new BlockItem(TKBlocks.TOASTY_CRYSTAL_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+	 
+	 public static final RegistryObject<BlockItem> NETHER_TOASTY_CRYSTAL_ORE = ITEMS.register("nether_toasty_crystal_ore", 
+			 () -> new BlockItem(TKBlocks.NETHER_TOASTY_CRYSTAL_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
 
 	    
 	    

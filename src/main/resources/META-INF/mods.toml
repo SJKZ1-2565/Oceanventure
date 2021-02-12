@@ -20,7 +20,7 @@
 
 		modId="forge" 
 		mandatory=true 
-		versionRange="[36.0.1,)" 
+		versionRange="[36.0.4,)" 
 		ordering="NONE"
 		side="BOTH"
 		
