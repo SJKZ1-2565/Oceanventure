@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.sjkz1.toastkun.event.OreGen;
+import com.sjkz1.toastkun.event.TKEventHandler;
 import com.sjkz1.toastkun.init.TKBlocks;
 import com.sjkz1.toastkun.init.TKItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,12 +27,18 @@ public class ToastKun
 		TKItems.ITEMS.register(Bus);
 		TKBlocks.BLOCKS.register(Bus);
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGen::genOres);
+
 		LOGGER.info("Successfully setup mod!");
 	}
 
 	private void setup(FMLCommonSetupEvent event) 
 	{
-	
+		registerEventHandler(new TKEventHandler());
 	}
+	
+	 public static void registerEventHandler(Object event)
+	    {
+	        MinecraftForge.EVENT_BUS.register(event);
+	    }
 
 }
