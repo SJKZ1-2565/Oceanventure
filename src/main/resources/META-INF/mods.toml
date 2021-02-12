@@ -1,0 +1,32 @@
+	modLoader="javafml" 
+	loaderVersion="[36,)"
+	license="MIT License"
+
+
+
+[[mods]] 
+
+	modId="toastkun" 
+	version="${file.jarVersion}" 
+	displayName="ToastKun" 
+	logoFile="logo.png" 
+	credits="ToastKun"
+	authors="SJKZ1" 
+	description='''A special mod for ToastKun'''
+
+
+
+[[dependencies.toastkun]] 
+
+		modId="forge" 
+		mandatory=true 
+		versionRange="[36.0.1,)" 
+		ordering="NONE"
+		side="BOTH"
+		
+[[dependencies.toastkun]]
+		modId="minecraft"
+		mandatory=true
+		versionRange="[1.16.5]"
+		ordering="NONE"
+		side="BOTH"
