@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "toastkun:block/nether_toasty_ore"
+      "model": "toastkun:block/nether_toasty_crystal_ore"
     }
   }
 }
