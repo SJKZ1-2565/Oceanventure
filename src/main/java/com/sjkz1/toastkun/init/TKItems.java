@@ -3,9 +3,6 @@ package com.sjkz1.toastkun.init;
 
 import com.sjkz1.toastkun.core.ToastKun;
 
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Foods;
@@ -27,7 +24,7 @@ public class TKItems
 	 
 	 public static final RegistryObject<Item> CRISPY_OMLET = ITEMS.register("crispy_omlet", () -> new Item(new Item.Properties().group(ItemGroup.FOOD).food(Foods.BREAD)));
 	 
-	 public static final RegistryObject<TestItem> TOASTY_CRYSTAL = ITEMS.register("toasty_crystal", () -> new TestItem(new Item.Properties().group(ItemGroup.MISC)));
+	 public static final RegistryObject<GiveXpItem> TOASTY_CRYSTAL = ITEMS.register("toasty_crystal", () -> new GiveXpItem(new Item.Properties().group(ItemGroup.MISC)));
 	 
 	 public static final RegistryObject<AxeItem> TOASTY_CRYSTAL_AXE = ITEMS.register("toasty_crystal_axe", () -> new AxeItem(ItemTier.DIAMOND, 3, 2, new Item.Properties().group(ItemGroup.TOOLS)));
 	 
@@ -38,15 +35,6 @@ public class TKItems
 	 public static final RegistryObject<ShovelItem> TOASTY_CRYSTAL_SHOVEL = ITEMS.register("toasty_crystal_shovel", () -> new ShovelItem(ItemTier.DIAMOND, 3, 2, new Item.Properties().group(ItemGroup.TOOLS)));
 	 
 	 public static final RegistryObject<SwordItem> TOASTY_CRYSTAL_SWORD = ITEMS.register("toasty_crystal_sword", () -> new SwordItem(ItemTier.DIAMOND, 3, 2, new Item.Properties().group(ItemGroup.COMBAT)));
-	 
-	 
-	 
-	 //Armor
-	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_HELMET = ITEMS.register("toasty_crystal_helmet", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.HEAD, (new Item.Properties()).group(ItemGroup.COMBAT)));
-	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_CHESTPLATE = ITEMS.register("toasty_crystal_chestplate", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.CHEST, (new Item.Properties()).group(ItemGroup.COMBAT)));
-	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_LEGGINGS= ITEMS.register("toasty_crystal_leggings", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.LEGS, (new Item.Properties()).group(ItemGroup.COMBAT)));
-	 public static final RegistryObject<ArmorItem> TOASTY_CRYSTAL_BOOTS = ITEMS.register("toasty_crystal_boots", () -> new ArmorItem(ArmorMaterial.DIAMOND, EquipmentSlotType.FEET, (new Item.Properties()).group(ItemGroup.COMBAT)));
-
 	 
 	 public static final RegistryObject<BlockItem> TOASTY_CRYSTAL_ORE = ITEMS.register("toasty_crystal_ore", 
 			 () -> new BlockItem(TKBlocks.TOASTY_CRYSTAL_ORE.get(),new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));

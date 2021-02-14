@@ -8,10 +8,6 @@
 	"item.toastkun.toasty_crystal_sword" : "Toasty Crystal Sword",
 	"item.toastkun.toasty_crystal_pickaxe" : "Toasty Crystal Piackaxe",
 	"item.toastkun.toasty_crystal_shovel" : "Toasty Crystal Shovel",
-	"item.toastkun.toasty_crystal_helmet" : "Toasty Crystal Helmet",
-	"item.toastkun.toasty_crystal_chestplate" : "Toasty Crystal Chestplate",
-	"item.toastkun.toasty_crystal_leggings" : "Toasty Crystal Leggings",
-	"item.toastkun.toasty_crystal_boots" : "Toasty Crystal Boots",
 	"block.toastkun.toasty_crystal_ore" : "Toasty Crystal Ore",
 	"block.toastkun.nether_toasty_crystal_ore" : "Nether Toasty Cyrstal Ore",
 	"itemGroup.toastkunTab" : "ToastKun"
