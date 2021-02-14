@@ -8,10 +8,10 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
-public class TestItem extends Item
+public class GiveXpItem extends Item
 {
 
-	public TestItem(Properties properties) 
+	public GiveXpItem(Properties properties) 
 	{
 		super(properties);
 	}
@@ -20,12 +20,15 @@ public class TestItem extends Item
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn)
 	{
 		ItemStack itemstack = playerIn.getHeldItem(handIn);
-		playerIn.addExperienceLevel(10);
-		playerIn.addStat(Stats.ITEM_USED.get(this));
-	      if (!playerIn.abilities.isCreativeMode) {
-	         itemstack.shrink(1);
-	      }
+		if(playerIn.experienceLevel >= 10)
+		{
+			playerIn.addExperienceLevel((int) 3.5);
+			playerIn.addStat(Stats.ITEM_USED.get(this));
+			if (!playerIn.abilities.isCreativeMode) {
+				itemstack.shrink(1);
+			}
+		}
 		return super.onItemRightClick(worldIn, playerIn, handIn);
 	}
-	
+
 }

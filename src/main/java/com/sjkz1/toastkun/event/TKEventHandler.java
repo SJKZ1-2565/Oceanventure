@@ -2,6 +2,7 @@ package com.sjkz1.toastkun.event;
 
 import com.sjkz1.toastkun.init.TKItems;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -10,6 +11,12 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class TKEventHandler 
 {
+	public Minecraft mc;
+	public TKEventHandler()
+	{
+		this.mc = Minecraft.getInstance();
+	}
+	
 	@SubscribeEvent
 	public void onAttackEntity(AttackEntityEvent event)
 	{

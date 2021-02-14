@@ -27,9 +27,10 @@ public class OreGen
 		}
 	}
 
-	public static void genOre(BiomeGenerationSettingsBuilder builder, RuleTest fillerType, BlockState block, int veinSize, int minHeigh , int maxHeigh , int count)
+	public static void genOre(BiomeGenerationSettingsBuilder biomeGenSettingsBuilder, RuleTest fillerType, BlockState block, int veinSize, int minHeigh , int maxHeigh , int count)
 	{
-		builder.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(fillerType , block , veinSize)).withPlacement(Placement.RANGE.configure(new TopSolidRangeConfig(minHeigh, 0, maxHeigh))).square().func_242731_b(count));
+		biomeGenSettingsBuilder.withFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE.withConfiguration(new OreFeatureConfig(fillerType , block , veinSize)).withPlacement(Placement.RANGE.configure(new TopSolidRangeConfig(minHeigh, 0, maxHeigh))).square().func_242731_b(count));
+		
 	}
 	
 }
