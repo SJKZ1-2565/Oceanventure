@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "E",
-    "",
-    ""
-  ],
-  "key": {
-    "E": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:bread"
     }
-  },
+  ],
   "result": {
     "item": "toastkun:toast",
-    "count": 3
+    "count": 9
   }
 }
