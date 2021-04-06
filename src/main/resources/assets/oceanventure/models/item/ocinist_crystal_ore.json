@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oceanventure:block/ocinist_crystal_ore"
+  }
+}

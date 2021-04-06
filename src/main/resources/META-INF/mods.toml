@@ -6,7 +6,7 @@
 
 [[mods]] 
 
-	modId="toastkun" 
+	modId="oceanventure" 
 	version="${file.jarVersion}" 
 	displayName="ToastKun" 
 	logoFile="logo.png" 
@@ -16,15 +16,15 @@
 
 
 
-[[dependencies.toastkun]] 
+[[dependencies.oceanventure]] 
 
 		modId="forge" 
 		mandatory=true 
-		versionRange="[36.0.4,)" 
+		versionRange="[36.1.2,)" 
 		ordering="NONE"
 		side="BOTH"
 		
-[[dependencies.toastkun]]
+[[dependencies.oceanventure]]
 		modId="minecraft"
 		mandatory=true
 		versionRange="[1.16.5]"

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "oceanventure:item/ocinist_crystal_axe"
+  }
+}

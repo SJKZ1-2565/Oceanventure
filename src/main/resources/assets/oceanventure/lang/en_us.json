@@ -1,0 +1,13 @@
+{
+
+	"item.oceanventure.toast" : "Toast",
+	"item.oceanventure.ocinist_crystal" : "Ocinisy Crystal",
+	"item.oceanventure.crispy_omlet" : "Crispy Omlet",
+	"item.oceanventure.ocinist_crystal_hoe" : "Ocinisy Crystal Hoe",
+	"item.oceanventure.ocinist_crystal_axe" : "Ocinisy Crystal Axe",
+	"item.oceanventure.ocinist_crystal_sword" : "Ocinisy Crystal Sword",
+	"item.oceanventure.ocinist_crystal_pickaxe" : "Ocinisy Crystal Piackaxe",
+	"item.oceanventure.ocinist_crystal_shovel" : "Ocinisy Crystal Shovel",
+	"block.oceanventure.ocinist_crystal_ore" : "Ocinisy Crystal Ore",
+	"itemGroup.oceanventureTab" : "Oceanventure"
+}
