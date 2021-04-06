@@ -7,7 +7,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "3.+", changing: true
+        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "4.1.+", changing: true
         classpath "gradle.plugin.com.matthewprenger:CurseGradle:1.4.0"
         
     }
@@ -17,13 +17,8 @@ plugins {
     id "com.matthewprenger.cursegradle" version "1.4.0"
 }
 
-
-
-
 apply plugin: "net.minecraftforge.gradle"
 apply plugin: "eclipse"
-
-
 
 version = "1.0.0"
 group = "com.sjkz1.toastkun"
@@ -32,7 +27,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 println("Java: " + System.getProperty("java.version") + " JVM: " + System.getProperty("java.vm.version") + "(" + System.getProperty("java.vendor") + ") Arch: " + System.getProperty("os.arch"))
 
 minecraft {
-    mappings channel: "snapshot", version: "20201028-1.16.3"
+    mappings channel: "snapshot", version: "20210309-1.16.5"
 
     runs {
         client {
@@ -43,5 +38,5 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.0.4'
+    minecraft "net.minecraftforge:forge:1.16.5-36.1.2"
    }
