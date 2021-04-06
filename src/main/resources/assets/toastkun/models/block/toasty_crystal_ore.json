@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "toastkun:block/toasty_crystal_ore"
-  }
-}
