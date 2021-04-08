@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "oceanventure:item/crispy_omlet"
+    "layer0": "oceanventure:item/ocinist_crystal"
   }
 }
