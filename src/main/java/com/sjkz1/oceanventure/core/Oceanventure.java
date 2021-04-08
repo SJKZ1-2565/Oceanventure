@@ -8,6 +8,8 @@ import com.sjkz1.oceanventure.event.OreGen;
 import com.sjkz1.oceanventure.init.OceanventureBlocks;
 import com.sjkz1.oceanventure.init.OceanventureItems;
 
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,10 +38,23 @@ public class Oceanventure
 	{
 		registerEventHandler(new OceanventureEvent());
 	}
+
+	public static void registerEventHandler(Object event)
+	{
+		MinecraftForge.EVENT_BUS.register(event);
+	}
 	
-	 public static void registerEventHandler(Object event)
-	    {
-	        MinecraftForge.EVENT_BUS.register(event);
-	    }
+	public static class OceanventureItemGroup extends ItemGroup {
+		public static final ItemGroup instance = new OceanventureItemGroup(ItemGroup.GROUPS.length, "OceanventureItemGroup");
+
+		private OceanventureItemGroup(int index, String label) {
+			super(index, label);
+		}
+
+		@Override
+		public ItemStack createIcon() {
+			return new ItemStack(OceanventureItems.OCINIST_CRYSTAL.get());
+		}
+	}
 
 }
