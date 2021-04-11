@@ -13,5 +13,7 @@
 	"item.oceanventure.ocinist_crystal_pickaxe" : "Ocinist Crystal Piackaxe",
 	"item.oceanventure.ocinist_crystal_shovel" : "Ocinist Crystal Shovel",
 	"block.oceanventure.ocinist_crystal_ore" : "Ocinist Crystal Ore",
-	"itemGroup.oceanventureTab" : "Oceanventure"
+	"itemGroup.oceanventureItemGroup" : "Oceanventure",
+	"entity.oceanventure.plakud" : "Plakud",
+	"item.oceanventure.plakud_spawn_egg" : "Plakud Spawn Egg"
 }

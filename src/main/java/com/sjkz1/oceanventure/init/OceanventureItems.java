@@ -39,6 +39,10 @@ public class OceanventureItems
 	 
 	 public static final RegistryObject<SwordItem> OCINIST_CRYSTAL_SWORD = ITEMS.register("ocinist_crystal_sword", () -> new SwordItem(ItemTier.DIAMOND, 3, 2, new Item.Properties().group(OceanventureItemGroup.instance)));
 	 
+	 public static final RegistryObject<SpawnEgg> PLAKUD_SPAWN_EGG = ITEMS.register("plakud_spawn_egg",
+				() -> new SpawnEgg(OceanventureEntityTypes.PLAKUD, 0x3a9e55, 0x41d1a8,
+						new Item.Properties().group(OceanventureItemGroup.instance).maxStackSize(64)));
+	 
 	 public static final RegistryObject<BlockItem> OCINIST_CRYSTAL_ORE = ITEMS.register("ocinist_crystal_ore", 
 			 () -> new BlockItem(OceanventureBlocks.OCINIST_CRYSTAL_ORE.get(),new Item.Properties().group(OceanventureItemGroup.instance)));
 	 
