@@ -15,7 +15,8 @@ public class PlakudEntityRenderer extends MobRenderer<PlakudEntity, PlakudEntity
         super(renderManagerIn, new PlakudEntityModel<>(), 0.3F);
     }
 
-    public ResourceLocation getEntityTexture(PlakudEntity entity) {
+    @Override
+	public ResourceLocation getEntityTexture(PlakudEntity entity) {
         return TEXTURE;
     }
 }
