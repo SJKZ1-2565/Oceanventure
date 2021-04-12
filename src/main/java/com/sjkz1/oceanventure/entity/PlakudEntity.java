@@ -3,42 +3,30 @@ package com.sjkz1.oceanventure.entity;
 import com.sjkz1.oceanventure.init.OceanventureItems;
 
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.passive.fish.AbstractGroupFishEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.EntityPredicates;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 public class PlakudEntity extends AbstractGroupFishEntity 
 {
+	public int timeUntilNextEmerald = this.rand.nextInt(6000) + 6000;
 	public PlakudEntity(EntityType<? extends PlakudEntity> entity, World world) 
 	{
 		super(entity, world);
 	}
+
 	@Override
-	protected void registerGoals() {
-		this.goalSelector.addGoal(0, new PanicGoal(this, 1.25D));
-		this.goalSelector.addGoal(2, new AvoidEntityGoal<>(this, PlayerEntity.class, 8.0F, 1.6D, 1.4D, EntityPredicates.NOT_SPECTATING::test));
-		this.goalSelector.addGoal(4, new PlakudEntity.SwimGoal(this));
-	}
-
-	static class SwimGoal extends RandomSwimmingGoal {
-		public final PlakudEntity fish;
-
-		public SwimGoal(PlakudEntity fish) {
-			super(fish, 1.0D, 40);
-			this.fish = fish;
-		}
-
-		public boolean shouldExecute() {
-			return super.shouldExecute();
+	public void livingTick() {
+		super.livingTick();
+		if (!this.world.isRemote && this.isAlive() && --this.timeUntilNextEmerald <= 0) 
+		{
+			this.playSound(SoundEvents.ENTITY_CHICKEN_EGG, 1.0F, (this.rand.nextFloat() - this.rand.nextFloat()) * 0.2F + 1.0F);
+			this.entityDropItem(Items.EMERALD);
+			this.timeUntilNextEmerald = this.rand.nextInt(6000) + 6000;
 		}
 	}
 
@@ -47,18 +35,22 @@ public class PlakudEntity extends AbstractGroupFishEntity
 		return new ItemStack(Items.COD_BUCKET);
 	}
 
+	@Override
 	protected SoundEvent getAmbientSound() {
 		return SoundEvents.ENTITY_COD_AMBIENT;
 	}
 
+	@Override
 	protected SoundEvent getDeathSound() {
 		return SoundEvents.ENTITY_COD_DEATH;
 	}
 
+	@Override
 	protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
 		return SoundEvents.ENTITY_COD_HURT;
 	}
 
+	@Override
 	protected SoundEvent getFlopSound() {
 		return SoundEvents.ENTITY_COD_FLOP;
 	}
@@ -66,6 +58,6 @@ public class PlakudEntity extends AbstractGroupFishEntity
 
 	@Override
 	public ItemStack getPickedResult(RayTraceResult target) {
-		return new ItemStack(OceanventureItems.EXAMPLE_SPAWN_EGG.get());
+		return new ItemStack(OceanventureItems.PLAKUD_SPAWN_EGG.get());
 	}
 }
