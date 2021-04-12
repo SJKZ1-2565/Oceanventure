@@ -15,7 +15,7 @@ public class OceanventureEntityTypes
     public static final DeferredRegister<EntityType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.ENTITIES, Oceanventure.MOD_ID);
 
     public static final RegistryObject<EntityType<PlakudEntity>> PLAKUD = create("plakud", EntityType.Builder.create(PlakudEntity::new, EntityClassification.WATER_AMBIENT).size(0.3f, 0.2f));
-
+   
     private static <T extends Entity> RegistryObject<EntityType<T>> create(String name, EntityType.Builder<T> builder) {
         return REGISTER.register(name, () -> builder.build(Oceanventure.MOD_ID + "." + name));
     }

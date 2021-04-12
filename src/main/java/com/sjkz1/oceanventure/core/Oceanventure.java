@@ -3,7 +3,6 @@ package com.sjkz1.oceanventure.core;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.sjkz1.oceanventure.entity.PlakudEntity;
 import com.sjkz1.oceanventure.event.OceanventureEvent;
 import com.sjkz1.oceanventure.event.OreGen;
 import com.sjkz1.oceanventure.init.OceanventureBlocks;
@@ -46,24 +45,24 @@ public class Oceanventure
 	private void setup(FMLCommonSetupEvent event) 
 	{
 		registerEventHandler(new OceanventureEvent());
-	    registerEntityAttributes();
-        EntitySpawnPlacementRegistry.register(OceanventureEntityTypes.PLAKUD.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractFishEntity::func_223363_b);
+		registerEntityAttributes();
+		EntitySpawnPlacementRegistry.register(OceanventureEntityTypes.PLAKUD.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractFishEntity::func_223363_b);
 	}
-	
-	 private void registerClient(FMLClientSetupEvent event) {
-	        ClientEventHandler.init();
-	    }
+
+	private void registerClient(FMLClientSetupEvent event) {
+		ClientEventHandler.init();
+	}
 
 	public static void registerEventHandler(Object event)
 	{
 		MinecraftForge.EVENT_BUS.register(event);
 	}
-	
+
 	@SuppressWarnings("deprecation")
 	private void registerEntityAttributes() {
-        GlobalEntityTypeAttributes.put(OceanventureEntityTypes.PLAKUD.get(), PlakudEntity.func_234176_m_().create());
-    }
-	
+		GlobalEntityTypeAttributes.put(OceanventureEntityTypes.PLAKUD.get(), AbstractFishEntity.func_234176_m_().create());
+	}
+
 	public static class OceanventureItemGroup extends ItemGroup {
 		public static final ItemGroup instance = new OceanventureItemGroup(ItemGroup.GROUPS.length, "OceanventureItemGroup");
 
