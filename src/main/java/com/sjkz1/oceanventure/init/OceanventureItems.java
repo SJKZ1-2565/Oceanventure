@@ -42,10 +42,9 @@ public class OceanventureItems
 	 public static final RegistryObject<SpawnEgg> PLAKUD_SPAWN_EGG = ITEMS.register("plakud_spawn_egg",
 				() -> new SpawnEgg(OceanventureEntityTypes.PLAKUD, 0x3a9e55, 0x41d1a8,
 						new Item.Properties().group(OceanventureItemGroup.instance).maxStackSize(64)));
-	 
+
 	 public static final RegistryObject<BlockItem> OCINIST_CRYSTAL_ORE = ITEMS.register("ocinist_crystal_ore", 
 			 () -> new BlockItem(OceanventureBlocks.OCINIST_CRYSTAL_ORE.get(),new Item.Properties().group(OceanventureItemGroup.instance)));
-	 
 	 
 	 //Armor
 	 public static final RegistryObject<ArmorItem> OCINIST_CRYSTAL_HELMET = ITEMS.register("ocinist_crystal_helmet",
