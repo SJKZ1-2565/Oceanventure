@@ -66,7 +66,7 @@ public class OceanventureEvent
 	}
 
 	@SubscribeEvent(priority = EventPriority.LOWEST)
-	public static void registerBiomes(BiomeLoadingEvent event) 
+	public void registerBiomes(BiomeLoadingEvent event) 
 	{
 		if (event.getCategory() == Biome.Category.SWAMP) 
 		{
